@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+- stable
+cache:
+  directories:
+  - node_modules
+script:
+- npm run build
+deploy:
+  provider: firebase
+  token:
+    secure: MrxN3WTpMlqbHl6pjcSwFI18iFKBpA6ghEguqgrZmbga90A3g4vEREd7mwCjjtoeAkSeKAChUDf9deDyxEsv1y1/laIw/M6sZSklyr3QqlgZV8qFRI3WEMq3IG1P5f8XXtmILwjAPwMYfohCyLn1IEmsGREFn4ok3NR7rSIztjytLotTv0RDqzEAocD5sCIEYHGh4iRGygtK2JYK8mxeLoDNoSrHL43B9hI12QJqkP5WCby1/tz7oTOsbcL9L398+Gde//SSLxoZgdOPiuvX9JTu8zv+I3Wxe3dti9bHrxQhmvX3CF+WhO/7kB+cq9LJVuipWNdHSkyoXACj6kWxOKmwoedkmT4ruulrbkiNapx6lz9e9J6c+Xu8bd26Xob6BZbQcK5NgFRaayezB+hPTCTu9SXBanDYEH8C7IIC0Av0bftdbDhdNusLOiQ+rdCE/eDMkAxoBapUDMWzDmgUnUPWdER88OTO99TZz5E0+a51ooSAk+f1IdbADzgBr/hByUJn2oaYSKa8kH8eTT1GU4SO/DV7qxP7bHUtfAxFJWlJIf2p+NHDCY/Yv1MDINQihOKFdJxkO2bjG7yPlZXxiXV+IciYOBuRJijVWqvc6mQxU+Kw9BE9g1IR6Vmf4GRysBuX1CD/bXlGz6uT0iSY8Ld+Dv+yzyEPjLDdNbysIpM=
+  project: gatsby-router-issue
+  message: "Travis deployment"
+  skip_cleanup: true
+  on:
+    branch: master
