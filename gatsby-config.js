@@ -8,8 +8,6 @@ module.exports = {
     plugins: [
         `gatsby-plugin-typescript`,
         `gatsby-plugin-react-helmet`,
-        `gatsby-transformer-sharp`,
-        `gatsby-plugin-sharp`,
         `gatsby-plugin-tslint`,
         {
             resolve: `gatsby-source-filesystem`,
@@ -23,12 +21,6 @@ module.exports = {
                 prefixes: [`/*`]
             },
             resolve: `gatsby-plugin-create-client-paths`
-        },
-        {
-            options: {
-                precision: 8
-            },
-            resolve: `gatsby-plugin-sass`
         },
         {
             resolve: `gatsby-plugin-manifest`

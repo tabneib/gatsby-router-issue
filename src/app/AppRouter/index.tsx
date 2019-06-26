@@ -1,6 +1,6 @@
 import { Router } from "@reach/router";
 import * as React from "react";
-import { About } from "../About";
+import { IssuePage } from "../IssuePage";
 import { NotFound } from "../NotFound";
 import { Home } from "../Home";
 
@@ -9,7 +9,7 @@ export const AppRouter: React.FunctionComponent = () => {
         <Router>
             <NotFound default={true} />
             <Home path="/" />
-            <About path="/about" />
+            <IssuePage path="/issue" />
         </Router>
     );
 };

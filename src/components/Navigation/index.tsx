@@ -4,8 +4,12 @@ import { Link } from "@reach/router";
 export const Navigation: React.FunctionComponent = () => {
     return (
         <nav>
-            <Link to="home">Home </Link>
-            <Link to="about">About </Link>
+            <Link to="/" style={{ padding: "20px" }}>
+                Home
+            </Link>
+            <Link to="issue" style={{ padding: "20px" }}>
+                Issue Page
+            </Link>
         </nav>
     );
 };
