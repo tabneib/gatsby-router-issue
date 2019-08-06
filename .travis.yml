@@ -5,6 +5,8 @@ cache:
   directories:
   - node_modules
 script:
+- rm -rf ./node_modules/gatsby-plugin-manifest/gatsby-ssr.js
+- cp ./gatsby-ssr.js.patch ./node_modules/gatsby-plugin-manifest/gatsby-ssr.js
 - npm run build
 deploy:
   provider: firebase
